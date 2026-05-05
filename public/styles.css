@@ -1,3 +1,42 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/fraunces-var.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/fraunces-italic-var.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces Fallback";
+  src: local("Iowan Old Style"), local("Charter"), local("Georgia");
+  size-adjust: 100%;
+  ascent-override: 89%;
+  descent-override: 23%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Plex Fallback";
+  src: local("Helvetica Neue"), local("Helvetica"), local("Arial");
+  size-adjust: 105%;
+  ascent-override: 90%;
+  descent-override: 23%;
+  line-gap-override: 0%;
+}
+
 :root {
   --bg: #f7f4ed;
   --bg-elev: #fbf9f4;
@@ -9,8 +48,8 @@
   --accent: #8c2e20;
   --accent-soft: rgba(140, 46, 32, 0.12);
 
-  --font-display: "Fraunces", "Iowan Old Style", "Georgia", "Times New Roman", serif;
-  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Fraunces", "Fraunces Fallback", "Iowan Old Style", "Georgia", serif;
+  --font-body: "IBM Plex Sans", "Plex Fallback", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
   --container: 1140px;
   --gutter: clamp(20px, 5vw, 56px);
