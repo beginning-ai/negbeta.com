@@ -421,7 +421,112 @@ a:focus-visible {
   font-size: 12px;
   color: var(--muted);
   letter-spacing: 0.02em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
 }
+.footer-base p { margin: 0; }
+.footer-legal {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.footer-legal-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+.footer-legal-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ---------------- Legal pages ---------------- */
+
+.legal-hero {
+  padding-top: clamp(56px, 9vw, 96px);
+  padding-bottom: clamp(40px, 6vw, 64px);
+  border-bottom: 1px solid var(--rule);
+}
+.legal-hero .display-sm {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-variation-settings: "opsz" 96, "SOFT" 30;
+  font-size: clamp(36px, 5.4vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 18px;
+  max-width: 22ch;
+  color: var(--ink);
+}
+.legal-meta {
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+.legal-meta strong {
+  color: var(--ink-soft);
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.legal-body {
+  padding-top: clamp(40px, 6vw, 72px);
+  padding-bottom: var(--section-y);
+}
+.legal-body .container {
+  max-width: 760px;
+}
+.legal-body h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-variation-settings: "opsz" 60, "SOFT" 40;
+  font-size: clamp(22px, 2.6vw, 28px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 56px 0 16px;
+  color: var(--ink);
+}
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  margin: 28px 0 8px;
+  color: var(--ink);
+}
+.legal-body p,
+.legal-body ul,
+.legal-body ol {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+.legal-body ul, .legal-body ol {
+  padding-left: 22px;
+}
+.legal-body li { margin-bottom: 8px; }
+.legal-body a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule-strong);
+  text-decoration: none;
+  padding-bottom: 1px;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+.legal-body a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.legal-body strong { color: var(--ink); font-weight: 600; }
 
 /* ---------------- Reduced motion ---------------- */
 
