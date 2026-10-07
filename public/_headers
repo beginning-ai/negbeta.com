@@ -5,7 +5,7 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
-/styles.css
+/site.css
   Cache-Control: public, max-age=300, must-revalidate
 
 /favicon.svg
